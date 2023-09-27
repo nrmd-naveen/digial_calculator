@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+@font-face{
+    font-family: digital;
+    src: url(digital-7.ttf);
+}
+body{
+    
+    background-color: rgb(191, 191, 191);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.screen{
+    margin: 20px 0;
+    width: 440px;
+    background-color: rgba(0, 255, 255, 0.538);
+    height: 70px;
+    border-radius: 3px;
+    padding: px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.display{
+    background-color: rgba(97, 97, 97, 0.588);
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    text-align: right;
+    font-family: digital;
+    font-size: 60px;
+    font-stretch: ultra-condensed;
+    opacity: 65%;
+    color: rgba(8, 8, 8, 0.692);
+    overflow: hidden;
+}
+.display2{
+    font-size: 31px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+.calc-container{
+    margin-top: 10%;
+    padding: 25px;
+    background-color: rgba(46, 46, 46, 0.766);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 1.8) 0px 4px 7px, rgba(0, 0, 0, 0.371) 0px 7px 13px -3px, rgba(0, 0, 0, 0.541) 0px -3px 20px inset;
+    font-family: 'Righteous', cursive;
+}
+.add-rem-cont{
+    display: flex;
+    flex-direction: row;
+
+    width: 60%;
+}
+.top-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2%;
+}
+.bottom-numbers{
+    padding: 5px;
+    display: flex;
+
+}
+.number-container{
+    background-color: rgba(169, 169, 169, 0);
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.number{
+    height: 50px;
+    width: 75px;
+    background-color: rgb(236, 234, 234);
+    margin: 5px 4px;
+    padding: 2px;
+}
+.mul-div{
+    height: 123px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right-end2{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right-end{
+    display: flex;
+    height: 250px;
+    background-color: rgba(137, 43, 226, 0);
+}
+.add-rem{
+    width: 105px;
+    margin: 5px 15px;
+}
+.on-off{
+    margin: 5px 4px;
+    background-color: #fc6767e5;
+    padding: 2px;
+    width: 40%;
+    margin: 5px 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 15px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+.on-off:hover{
+    cursor: pointer;
+}
+.off{
+    background-color: #fc6767e5;
+}
+.on{
+    background-color: #7eb266;
+}
+.sum-button{
+    height: 112px;
+    width: 75px;
+    background-color: rgb(236, 236, 236);
+    margin: 10px 5px;
+    padding: 2px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.number , .sum-button {
+    border-radius: 25px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+.number,.sum-button{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.number:hover,.sum-button:hover{
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.number:active,.sum-button:active,.on-off:active {
+    box-shadow: 0 5px #383838;
+    transform: translateY(2px);
+  }

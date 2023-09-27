@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calc-container">
+        <div class="screen">
+            <h1 id="display" class="display"></h1>
+        </div>
+        <div class="top-buttons">
+            <div class="add-rem-cont">
+                <div onclick="clearDisplay()" class=" number add-rem">AC</div>
+                <div onclick="delFun()" class="number add-rem"><i class="fa-solid fa-delete-left" style="color: #000000;"></i></div>
+            </div>
+            <div onclick="powerOnOff(this.innerHTML)" id="onOff" class="on-off">OFF</div>
+        </div>
+        <div class="bottom-numbers">
+            <div class="number-container">
+                <div onclick="newClick(this.innerHTML)" id="" class="number">1</div>
+                <div onclick="newClick(this.innerHTML)" id="" class="number">2</div>
+                <div onclick="newClick(this.innerHTML)" id="" class="number">3</div>
+                <div onclick="newClick(this.innerHTML)" id="" class="number">4</div>
+                <div onclick="newClick(this.innerHTML)" id="" class="number">5</div>
+                <div onclick="newClick(this.innerHTML)" id="" class="number">6</div>
+                <div onclick="newClick(this.innerHTML)" id="" class="number">7</div>
+                <div onclick="newClick(this.innerHTML)" id="" class="number">8</div>
+                <div onclick="newClick(this.innerHTML)" id="" class="number">9</div>
+                <div onclick="newClick(this.innerHTML)" id="" class="number">0</div>
+                <div onclick="newClick(this.innerHTML)" id="" class="number">00</div>
+                <div onclick="newClick(this.innerHTML)" id="" class="number">.</div>
+            </div>
+            <div class="right-end">
+                <div class="right-end1">
+                    <div class="mul-div">
+                        <div onclick="newClick(this.innerHTML)" style="font-size: xx-large; font-weight: lighter;"  class="number">÷</div>
+                    <div onclick="newClick(this.innerHTML)" style="font-size: xx-large; font-weight: lighter;" class="number">×</div>
+                    </div>
+                    <div onclick="newClick(this.innerHTML)" style="font-size: xx-large; font-weight: lighter;" class="sum-button">+</div>
+                </div>
+                <div class="right-end2">
+                    <div onclick="newClick(this.innerHTML)" class="number">%</div>
+                    <div onclick="newClick(this.innerHTML)" style="font-size: x-large;" class="number">√</div>
+                    <div onclick="newClick(this.innerHTML)" style="font-size: xx-large; font-weight: lighter;" class="number">-</div>
+                    <div onclick="newClick(this.innerHTML)" style="font-size: xx-large; font-weight: lighter;" class="number">=</div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/eb7c27f75c.js" crossorigin="anonymous"></script>
+</html>
